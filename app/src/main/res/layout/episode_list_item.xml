@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@color/colorLightGrey"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/done_button"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:contentDescription="@string/episode_check_sign"
+        android:padding="10dp"
+        android:src="@drawable/ic_check_black_24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/episode_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/episode"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toRightOf="@+id/done_button"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteY="10dp" />
+
+    <TextView
+        android:id="@+id/episode_released"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sep 25, 2003"
+        android:textSize="15sp"
+        app:layout_constraintLeft_toRightOf="@+id/done_button"
+        app:layout_constraintTop_toBottomOf="@+id/episode_num"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/imdbRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/imdbrating"
+        android:textSize="15sp"
+        app:layout_constraintLeft_toRightOf="@+id/done_button"
+        app:layout_constraintTop_toBottomOf="@+id/episode_released" />
+
+    <TextView
+        android:id="@+id/episode_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:text="1"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/episode_num"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <!--<ImageView-->
+    <!--android:layout_width="18dp"-->
+    <!--android:layout_height="18dp"-->
+    <!--android:src="@drawable/ic_dots"-->
+    <!--app:layout_constraintRight_toRightOf="parent"-->
+    <!--app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--android:contentDescription="TODO" />-->
+    <ImageView
+        android:id="@+id/overflow"
+        android:layout_width="20dp"
+        android:layout_height="30dp"
+        android:contentDescription="@string/options"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_dots"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>

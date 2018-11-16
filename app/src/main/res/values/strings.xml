@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">TvSeriesGuide</string>
+    <string name="tv_series_image">Tv Series Image</string>
+    <string name="tv_series_thumbnail">Tv Series Thumbnail</string>
+    <string name="thumbnail">Thumbnail</string>
+    <string name="add_favorite">Add to favorites</string>
+    <string name="title">Title</string>
+    <string name="options">Options</string>
+    <string name="season">Season:</string>
+    <string name="season_number">Season Number</string>
+    <string name="seasons">SEASON :</string>
+    <string name="season_no">Season No</string>
+    <string name="seasonsLabel">Seasons</string>
+    <string name="episodesLabel">Episodes</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="seasonLabel">SEASON:</string>
+    <string name="episode">Episode:</string>
+    <string name="episode_check_sign">Episode Check sign</string>
+    <string name="imdbrating">imdbRating</string>
+    <string name="rating">Rating</string>
+
+    <string name="sep_22_1994_thu">SEP 22, 1994 (THU)</string>
+    <string name="detailsimage">DetailsImage</string>
+    <string name="episode_1">Episode 1</string>
+    <string name="_8_0_10_1062_votes">8.0/10 1062 votes</string>
+
+    <string name="genre">genre</string>
+    <string name="director">director</string>
+    <string name="writer">writer</string>
+    <string name="_10_9_03_edt_thu">10/9/03 EDT (Thu)</string>
+    <string name="imdbvotes">imdbVotes</string>
+    <string name="data_plot">Data plot</string>
+
+    <string name="awards">awards</string>
+    <string name="country">country</string>
+    <string name="language">language</string>
+    <string name="actors">actors</string>
+    <!--<string name="title">Title</string>-->
+</resources>
