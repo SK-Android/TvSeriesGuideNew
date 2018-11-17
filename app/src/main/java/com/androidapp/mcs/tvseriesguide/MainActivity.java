@@ -52,9 +52,9 @@ public class MainActivity extends AppCompatActivity {
     private AppDatabase db;  //Database
     public List<Series> seriesList;
 
-    private Executor executor = Executors.newSingleThreadExecutor();    //Executor can manage a pool of threads //Make sure I'm running one database operation at a time
+    private Executor executor = Executors.newSingleThreadExecutor();                     //Executor can manage a pool of threads //Make sure I'm running one database operation at a time
 
-    //This executor object can be reused multiple times and each operation will be executed one at a time.
+                                                                                        //This executor object can be reused multiple times and each operation will be executed one at a time.
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -85,8 +85,8 @@ public class MainActivity extends AppCompatActivity {
             executor.execute(new Runnable() {
                 @Override
                 public void run() {
-                    seriesList = db.seriesDao().getAllSeries(); //Get data from database
-                    EventBus.getDefault().post(new SerieListEvent(seriesList));//To dispatch an event using event bus. Pass the data to an event bus to get the data to the UI thread(Main thread)
+                    seriesList = db.seriesDao().getAllSeries();                                 //Get data from database
+                    EventBus.getDefault().post(new SerieListEvent(seriesList));                 //To dispatch an event using event bus. Pass the data to an event bus to get the data to the UI thread(Main thread)
 
                 }
             });
@@ -125,7 +125,7 @@ public class MainActivity extends AppCompatActivity {
     private void displayData(Series mSeries) {
         if (this.mSeries != null) {
 
-            if (Looper.myLooper() == Looper.getMainLooper()) {         //This line checks if the current thread is Main thread and returns true if it is.
+            if (Looper.myLooper() == Looper.getMainLooper()) {                                 //This line checks if the current thread is Main thread and returns true if it is.
                 SeriesAdapter seriesAdapter = new SeriesAdapter(this.mSeries, this);
                 recyclerView.setAdapter(seriesAdapter);
             } else {
@@ -165,7 +165,6 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
-
 
     //------------------------------------------------
 
