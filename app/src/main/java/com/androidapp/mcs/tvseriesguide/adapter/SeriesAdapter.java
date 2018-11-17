@@ -84,10 +84,10 @@ public class SeriesAdapter extends RecyclerView.Adapter<SeriesAdapter.ViewHolder
             public boolean onMenuItemClick(MenuItem item) {
                 Toast.makeText(context, "Added to favorites", Toast.LENGTH_SHORT).show();
 
-                    SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(context);
-                    SharedPreferences.Editor editor = preferences.edit();
-                    editor.putString(FAVBUTTON, item.toString());
-                    editor.apply();
+                SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(context);
+                SharedPreferences.Editor editor = preferences.edit();
+                editor.putString(FAVBUTTON, item.toString());
+                editor.apply();
 
 
                 return false;
