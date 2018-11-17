@@ -89,6 +89,7 @@ public class EpisodeResponse implements Parcelable {
         this.imdbRating = imdbRating;
         this.imdbID = imdbID;
     }
+
     @Ignore
     public EpisodeResponse() {
     }
