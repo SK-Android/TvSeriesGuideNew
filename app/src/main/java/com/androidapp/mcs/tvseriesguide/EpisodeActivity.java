@@ -36,7 +36,7 @@ public class EpisodeActivity extends AppCompatActivity {
     public String seasonNo;
     public String imdbID;
 
-    private AppDatabase db;  //Database
+    private AppDatabase db;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,7 +55,7 @@ public class EpisodeActivity extends AppCompatActivity {
             }
         } else {
             SharedPreferences preferences = getSharedPreferences(MY_GLOBAL_PREFS, MODE_PRIVATE);
-            imdbID = preferences.getString(DetailsFragment.IMDB_KEY, "tt0944947");   //second parameter indicated the default value that will be passed if the Key and its corresponding value isnt found
+            imdbID = preferences.getString(DetailsFragment.IMDB_KEY, "tt0944947");           //second parameter indicated the default value that will be passed if the Key and its corresponding value isnt found
             seasonNo = preferences.getString(DetailsFragment.SEASON_KEY, "1");
         }
 
@@ -132,7 +132,7 @@ public class EpisodeActivity extends AppCompatActivity {
     @Override
     protected void onDestroy() {
         SharedPreferences.Editor editor = getSharedPreferences(MY_GLOBAL_PREFS, MODE_PRIVATE).edit();  //Always select MODE_PRIVATE
-        //warning is displayed because I specified .edit()
+                                                                                                        //warning is displayed because I specified .edit()
         editor.putString(DetailsFragment.IMDB_KEY, imdbID);                                          // but haven't commited or applied  changes
         editor.putString(DetailsFragment.SEASON_KEY, seasonNo);
         editor.apply();
