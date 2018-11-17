@@ -30,7 +30,7 @@ public class Series {
     @Expose
     private String year;
 
-    @ColumnInfo                 //Turn below value into a SQLite column in a SQLite table
+    @ColumnInfo                 //Turns below values into a SQLite column in a SQLite table
     @SerializedName("Type")
     @Expose
     private String type;
