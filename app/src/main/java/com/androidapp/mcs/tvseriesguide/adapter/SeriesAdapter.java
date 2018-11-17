@@ -76,9 +76,9 @@ public class SeriesAdapter extends RecyclerView.Adapter<SeriesAdapter.ViewHolder
 
 
     private void showPopupMenu(ImageView overflow) {
-        PopupMenu popup = new PopupMenu(context, overflow); //Context and anchor-> to this button menu will be anchored
+        PopupMenu popup = new PopupMenu(context, overflow);                                     //Context and anchor-> to this button menu will be anchored
         MenuInflater inflater = popup.getMenuInflater();
-        inflater.inflate(R.menu.menu_album, popup.getMenu()); //Inflate the xml file and add all items to popup.getMenu()-> (This belongs to popup menu object)
+        inflater.inflate(R.menu.menu_album, popup.getMenu());                                   //Inflate the xml file and add all items to popup.getMenu()-> (This belongs to popup menu object)
         popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
             @Override
             public boolean onMenuItemClick(MenuItem item) {
@@ -106,7 +106,6 @@ public class SeriesAdapter extends RecyclerView.Adapter<SeriesAdapter.ViewHolder
         ImageView seriesThumbnail;
         TextView seriesTitle;
         ImageView overflow;
-        // public View mView;
 
         public ViewHolder(@NonNull final View itemView) {
             super(itemView);
