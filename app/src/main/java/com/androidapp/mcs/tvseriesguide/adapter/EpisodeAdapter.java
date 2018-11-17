@@ -19,7 +19,9 @@ import android.widget.Toast;
 import com.androidapp.mcs.tvseriesguide.DetailsActivity;
 import com.androidapp.mcs.tvseriesguide.R;
 import com.androidapp.mcs.tvseriesguide.model.EpisodeResponse;
+
 import java.util.List;
+
 import static com.androidapp.mcs.tvseriesguide.adapter.SeriesAdapter.FAVBUTTON;
 
 public class EpisodeAdapter extends RecyclerView.Adapter<EpisodeAdapter.ViewHolder> {
