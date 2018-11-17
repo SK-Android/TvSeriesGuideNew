@@ -57,10 +57,10 @@ public class DetailsActivity extends AppCompatActivity implements DetailsFragmen
         arguments.putString(DetailsFragment.EPISODE_KEY, episodeNumber);
 
         DetailsFragment detailsFragment = new DetailsFragment();
-        detailsFragment.setArguments(arguments);    //Accepts a bundle object of key value pairs
+        detailsFragment.setArguments(arguments);                                              //Accepts a bundle object of key value pairs
         getSupportFragmentManager()
                 .beginTransaction()
-                .add(R.id.fragment_container, detailsFragment)       //pass resource id of container and fragment object
+                .add(R.id.fragment_container, detailsFragment)                               //pass resource id of container and fragment object
                 .commit();
 
         constraintLayout = findViewById(R.id.details_const);
@@ -69,7 +69,7 @@ public class DetailsActivity extends AppCompatActivity implements DetailsFragmen
 
 
     @Override
-    public void onFragmentFinish(String imdbId, String seasonNo, String episodeNo) { //Get data from Details Fragment
+    public void onFragmentFinish(String imdbId, String seasonNo, String episodeNo) {                //Get data from Details Fragment
 
         if (imdbId != null && seasonNo != null && episodeNo != null) {
 //            Toast.makeText(this, "ID:\t"+imdbId+"\tSeason:\t"+seasonNo,+ Toast.LENGTH_SHORT).show();
